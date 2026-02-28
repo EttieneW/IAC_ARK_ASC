@@ -1,0 +1,15 @@
+# Copy this file to terraform.tfvars and fill in your values.
+# terraform.tfvars is gitignored - never commit it.
+
+aws_region          = "us-east-1"
+instance_type       = "c5.2xlarge"
+key_name            = ""   # Leave empty to let Terraform generate a key (saved as asa-server.pem)
+create_key_pair     = true
+ebs_volume_size_gb  = 300
+project_name        = "asa-server"
+
+# Restrict RDP to your IP for security (e.g. "1.2.3.4/32"). Use "0.0.0.0/0" to allow any (less secure).
+allowed_admin_cidr  = "0.0.0.0/0"
+
+# Optional: Git repo URL to clone in user-data. Leave empty to clone manually after first RDP.
+git_repo_url        = ""

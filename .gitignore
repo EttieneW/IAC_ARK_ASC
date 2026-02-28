@@ -1,0 +1,34 @@
+# Terraform
+terraform/.terraform/
+terraform/*.tfstate
+terraform/*.tfstate.*
+terraform/*.tfvars
+terraform/.terraform.lock.hcl
+
+# Windows
+Thumbs.db
+*.log
+Desktop.ini
+
+# Server install paths (do not track game binaries)
+ArkServer/
+Steam/
+
+# Keys and secrets (never commit)
+*.pem
+terraform/*.pem
+*.key
+*.p12
+
+# IDE / editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+
+# Local server launch overrides (use launch_args.txt.example as template)
+launch_args.txt
